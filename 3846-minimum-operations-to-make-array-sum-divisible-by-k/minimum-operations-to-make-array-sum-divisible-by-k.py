@@ -3,10 +3,7 @@ class Solution:
         # total = 0
         # for num in nums:
         #     total += num
-        # if total % k == 0:
-        #     return 0
-        # else:
-        #     return total % k
+        # return total % k
 
         return sum(nums) % k
 
