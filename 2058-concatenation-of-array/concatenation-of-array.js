@@ -3,6 +3,5 @@
  * @return {number[]}
  */
 const getConcatenation = (nums) => {
-    const x = [...nums];
-    return [...nums, ...x]
+    return [...nums, ...nums]
 };
