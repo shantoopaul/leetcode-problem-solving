@@ -4,4 +4,5 @@ class Solution:
         # for num in range(len(nums)):
         #     ans.append(nums[nums[num]])
         # return ans
-        return list(map(lambda n: nums[n], nums))
+        # return list(map(lambda n: nums[n], nums))
+        return [nums[i] for i in nums]
