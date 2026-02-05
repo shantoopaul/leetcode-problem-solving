@@ -8,5 +8,5 @@ var maxDistinct = function(s) {
     //     res.add(x)
     // }
     // return res.size;
-    return new Set(s.split("")).size
+    return new Set(s).size
 };
