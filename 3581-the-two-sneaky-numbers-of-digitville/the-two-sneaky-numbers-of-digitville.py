@@ -6,4 +6,6 @@ class Solution:
         for i in range(len(nums) - 1):
             if not nums[i] in arr and nums[i] == nums[i + 1]:
                 arr.append(nums[i])
+            if len(arr) == 2:
+                break
         return arr
