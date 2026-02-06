@@ -4,6 +4,6 @@ class Solution:
         arr = []
 
         for i in range(len(nums) - 1):
-            if nums[i] == nums[i + 1]:
+            if not nums[i] in arr and nums[i] == nums[i + 1]:
                 arr.append(nums[i])
         return arr
