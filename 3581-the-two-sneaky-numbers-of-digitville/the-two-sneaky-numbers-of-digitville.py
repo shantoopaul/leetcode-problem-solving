@@ -7,4 +7,6 @@ class Solution:
             sneaky[num] = sneaky.get(num, 0) + 1
             if sneaky[num] == 2:
                 res.append(num)
+            if len(res) == 2:
+                break
         return res
