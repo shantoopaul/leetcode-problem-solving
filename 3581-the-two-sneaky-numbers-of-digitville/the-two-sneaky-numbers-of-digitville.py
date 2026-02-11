@@ -1,11 +1,10 @@
 class Solution:
     def getSneakyNumbers(self, nums: List[int]) -> List[int]:
-        nums.sort()
-        arr = []
+        res = []
+        sneaky = {}
 
-        for i in range(len(nums) - 1):
-            if nums[i] not in arr and nums[i] == nums[i + 1]:
-                arr.append(nums[i])
-            if len(arr) == 2:
-                break
-        return arr
+        for num in nums:
+            sneaky[num] = sneaky.get(num, 0) + 1
+            if sneaky[num] == 2:
+                res.append(num)
+        return res
